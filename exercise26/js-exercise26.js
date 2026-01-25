@@ -1,7 +1,7 @@
 // blocking function
 
 const blockingdata = () =>{
-    alert("blocking data")
+    // alert("blocking data")
     console.log("blocking data after alert")
 }
 
