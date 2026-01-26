@@ -1,0 +1,17 @@
+{
+  "id": 1,
+  "name": "hamdi",
+  "email": "hamdi@gmail.com",
+  "phone": "+252612345678",
+  "orders": [
+    { "id": 1, "product": "iphone", "category": "electronics", "price": 900, "quantity": 3 },
+    { "id": 2, "product": "tablet", "category": "electronics", "price": 500, "quantity": 2 },
+    { "id": 3, "product": "laptop", "category": "electronics", "price": 1200, "quantity": 1 },
+    { "id": 4, "product": "headphones", "category": "accessories", "price": 150, "quantity": 4 }
+  ],
+  "address": {
+    "district": "Warta-nabadda",
+    "city": "Mogadishu",
+    "country": "Somalia"
+  }
+}
