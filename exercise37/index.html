@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>poster</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: min(70%, 1000px);
+            margin-inline: auto;
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            color: #fff;
+            background-color: #0077ff;
+            padding: 15px 10px;
+            border-radius: 8px;
+            text-transform: uppercase;
+            margin: 15px 0;
+        }
+
+        .post-form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-bottom: 30px;
+        }
+
+        .post-form input,
+        .post-form textarea {
+            width: 100%;
+            padding: 12px 14px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 15px;
+            transition: border 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .post-form input:focus,
+        .post-form textarea:focus {
+            border-color: #0077ff;
+            box-shadow: 0 0 0 3px rgba(0, 119, 255, 0.15);
+        }
+
+        .post-form textarea {
+            resize: vertical;
+            min-height: 140px;
+        }
+
+        .post-btn {
+            background-color: #0077ff;
+            color: #fff;
+            border: none;
+            padding: 14px;
+            font-size: 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.2s ease, transform 0.1s ease;
+        }
+
+        .post-btn:hover {
+            background-color: #005fd1;
+            transform: translateY(-1px);
+        }
+
+        .post-btn:active {
+            transform: translateY(0);
+        }
+
+
+        .post-blog {
+            margin-top: 30px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .post {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 18px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.144);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .post-title-text {
+            font-size: 20px;
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 15px;
+        }
+
+        .post-image-url {
+            width: 100%;
+            max-height: 480px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .post-message-text {
+            font-size: 15px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .post button {
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+            width: fit-content;
+        }
+
+        .edit-btn {
+            background-color: #ffc107;
+            color: #000;
+            border: none;
+            margin-right: 10px;
+        }
+
+        .delete-btn {
+            background-color: #ff4d4d;
+            color: #fff;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Create New Post</h1>
+        <form class="post-form">
+            <input type="text" required placeholder="enter post title" class="post-title">
+            <input type="text" placeholder="enter image url (optional)" class="post-image">
+            <textarea cols="50" rows="15" placeholder="Message" class="post-message"></textarea>
+            <button type="submit" class="post-btn">submit Post</button>
+        </form>
+        <div class="post-blog">
+            <h2 style="text-align: center; line-height: 50vh;">ALL POSTS</h2>
+        </div>
+    </div>
+    <script src="js-exercise37.js"></script>
+</body>
+
+</html>
